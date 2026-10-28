@@ -1,0 +1,489 @@
+<header class="hero">
+  <div class="hero__inner">
+    <h1>
+      <svg class="hero-sparkles hero-sparkles--left" viewBox="0 0 52 52" aria-hidden="true">
+        <defs>
+          <radialGradient id="sparkle-grad-big-left" cx="36" cy="24" r="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="20%" stop-color="#FFF2A3"/>
+            <stop offset="55%" stop-color="#F7BD22"/>
+            <stop offset="100%" stop-color="#E5940E"/>
+          </radialGradient>
+          <radialGradient id="sparkle-grad-top-left" cx="16" cy="15" r="10" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="25%" stop-color="#FFF2A3"/>
+            <stop offset="60%" stop-color="#F7BD22"/>
+            <stop offset="100%" stop-color="#E5940E"/>
+          </radialGradient>
+          <radialGradient id="sparkle-grad-bot-left" cx="19" cy="38" r="8" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="25%" stop-color="#FFF2A3"/>
+            <stop offset="60%" stop-color="#F7BD22"/>
+            <stop offset="100%" stop-color="#E5940E"/>
+          </radialGradient>
+        </defs>
+        <!-- Top-Left Star -->
+        <path d="M 16 5 C 16 11.5, 18.1 15, 22 15 C 18.1 15, 16 18.5, 16 25 C 16 18.5, 13.9 15, 10 15 C 13.9 15, 16 11.5, 16 5 Z" fill="url(#sparkle-grad-top-left)"/>
+        <!-- Bottom-Left Star -->
+        <path d="M 19 30 C 19 35.2, 20.6 38, 23.5 38 C 20.6 38, 19 40.8, 19 46 C 19 40.8, 17.4 38, 14.5 38 C 17.4 38, 19 35.2, 19 30 Z" fill="url(#sparkle-grad-bot-left)"/>
+        <!-- Main Big Star -->
+        <path d="M 36 2 C 36 16.3, 40.55 24, 49 24 C 40.55 24, 36 31.7, 36 46 C 36 31.7, 31.45 24, 23 24 C 31.45 24, 36 16.3, 36 2 Z" fill="url(#sparkle-grad-big-left)"/>
+      </svg>
+      <span class="hero-title-text">Adventure Awaits</span>
+      <svg class="hero-sparkles hero-sparkles--right" viewBox="0 0 52 52" aria-hidden="true">
+        <defs>
+          <radialGradient id="sparkle-grad-big-right" cx="36" cy="24" r="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="20%" stop-color="#FFF2A3"/>
+            <stop offset="55%" stop-color="#F7BD22"/>
+            <stop offset="100%" stop-color="#E5940E"/>
+          </radialGradient>
+          <radialGradient id="sparkle-grad-top-right" cx="16" cy="15" r="10" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="25%" stop-color="#FFF2A3"/>
+            <stop offset="60%" stop-color="#F7BD22"/>
+            <stop offset="100%" stop-color="#E5940E"/>
+          </radialGradient>
+          <radialGradient id="sparkle-grad-bot-right" cx="19" cy="38" r="8" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="25%" stop-color="#FFF2A3"/>
+            <stop offset="60%" stop-color="#F7BD22"/>
+            <stop offset="100%" stop-color="#E5940E"/>
+          </radialGradient>
+        </defs>
+        <!-- Top-Left Star -->
+        <path d="M 16 5 C 16 11.5, 18.1 15, 22 15 C 18.1 15, 16 18.5, 16 25 C 16 18.5, 13.9 15, 10 15 C 13.9 15, 16 11.5, 16 5 Z" fill="url(#sparkle-grad-top-right)"/>
+        <!-- Bottom-Left Star -->
+        <path d="M 19 30 C 19 35.2, 20.6 38, 23.5 38 C 20.6 38, 19 40.8, 19 46 C 19 40.8, 17.4 38, 14.5 38 C 17.4 38, 19 35.2, 19 30 Z" fill="url(#sparkle-grad-bot-right)"/>
+        <!-- Main Big Star -->
+        <path d="M 36 2 C 36 16.3, 40.55 24, 49 24 C 40.55 24, 36 31.7, 36 46 C 36 31.7, 31.45 24, 23 24 C 31.45 24, 36 16.3, 36 2 Z" fill="url(#sparkle-grad-big-right)"/>
+      </svg>
+    </h1>
+    <p>
+      Embark on epic quests where every choice shapes your destiny. Explore mystical realms,
+      solve ancient mysteries, and become the hero of your own story.
+    </p>
+    <div class="count">
+      <svg class="count-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M2 6c4-1 8 0 10 2 2-2 6-3 10-2v13c-4-1-8 0-10 2-2-2-6-3-10-2V6z"/>
+        <path d="M12 8v13"/>
+      </svg>
+      <span>{{ books().length }} Epic Adventures Available</span>
+      <svg class="count-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.438 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.438 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+        <path d="M20 3v4"/>
+        <path d="M22 5h-4"/>
+        <path d="M4 17v2"/>
+        <path d="M5 18H3"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<main class="library">
+  <section class="intro" aria-labelledby="library-title">
+    <h2 id="library-title">
+      <img src="books-icon.png" class="books-icon" alt="" aria-hidden="true" />
+      <span>The Adventure Library</span>
+    </h2>
+    <p>
+      Choose your next adventure from our collection of interactive tales. Each book offers
+      unique paths and multiple endings based on your choices.
+    </p>
+  </section>
+
+  @if (hasActiveAdventure()) {
+    <aside class="continue-card">
+      <div>
+        <strong>An adventure is in progress</strong>
+        <span>Return exactly where you left off.</span>
+      </div>
+      <div class="continue-card__actions">
+        <button type="button" class="continue-card__btn" (click)="continue()">Continue adventure →</button>
+        <button
+          type="button"
+          class="continue-card__dismiss"
+          (click)="dismissActiveSession()"
+          title="Dismiss active adventure"
+          aria-label="Dismiss active adventure"
+        >
+          ✕
+        </button>
+      </div>
+    </aside>
+  }
+
+  <section class="toolbar" aria-label="Book filters">
+    <label class="search">
+      <span class="sr-only">Search adventures</span>
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="6"/>
+        <path d="m15.5 15.5 4.5 4.5"/>
+      </svg>
+      <input [ngModel]="query()" (ngModelChange)="query.set($event)" placeholder="Search adventures…" />
+    </label>
+
+    <div class="filter-row">
+      <span class="filter-label">
+        <svg class="funnel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3.5 5.5h17l-6.5 7.25v4.75l-4 2v-6.75z"/>
+        </svg>
+        Filters:
+      </span>
+      <button type="button" [class.active]="genre() === 'Fantasy'" [attr.aria-pressed]="genre() === 'Fantasy'" (click)="toggleGenre('Fantasy')">Fantasy</button>
+      <button type="button" [class.active]="genre() === 'Adventure'" [attr.aria-pressed]="genre() === 'Adventure'" (click)="toggleGenre('Adventure')">Adventure</button>
+      <button type="button" [class.active]="genre() === 'High Fantasy'" [attr.aria-pressed]="genre() === 'High Fantasy'" (click)="toggleGenre('High Fantasy')">High Fantasy</button>
+      <button type="button" [class.active]="genre() === 'Steampunk Mystery'" [attr.aria-pressed]="genre() === 'Steampunk Mystery'" (click)="toggleGenre('Steampunk Mystery')">Steampunk Mystery</button>
+      <button type="button" [class.active]="difficulty() === 'EASY'" [attr.aria-pressed]="difficulty() === 'EASY'" (click)="toggleDifficulty('EASY')">Easy</button>
+      <button type="button" [class.active]="difficulty() === 'MEDIUM'" [attr.aria-pressed]="difficulty() === 'MEDIUM'" (click)="toggleDifficulty('MEDIUM')">Medium</button>
+      <button type="button" [class.active]="difficulty() === 'HARD'" [attr.aria-pressed]="difficulty() === 'HARD'" (click)="toggleDifficulty('HARD')">Hard</button>
+
+      <button type="button" class="btn-add-quest" (click)="openImportModal()">
+        <svg class="btn-add-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+        <span>Add quest</span>
+      </button>
+
+      <label class="import">
+        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+        Add book
+        <input type="file" accept="application/json,.json" (change)="upload($event)" />
+      </label>
+    </div>
+  </section>
+
+  @if (error()) {
+    <div class="notice notice--error" role="alert">
+      <strong>Something went wrong</strong>
+      <span>{{ error() }}</span>
+    </div>
+  }
+
+  @if (loading()) {
+    <div class="state" aria-live="polite">
+      <span class="spinner"></span>
+      Opening the library…
+    </div>
+  } @else if (books().length === 0) {
+    <div class="state">No adventures match those filters.</div>
+  } @else {
+    <section class="grid" aria-live="polite">
+      @for (book of books(); track book.id) {
+        <article class="book" [class.book--invalid]="!book.playable">
+          <h3>{{ bookMeta(book).displayTitle }}</h3>
+          <p class="author">by {{ bookMeta(book).displayAuthor }}</p>
+          <p class="summary">
+            {{ book.playable ? bookMeta(book).summary : issueSummary(book) }}
+          </p>
+
+          <div class="book__meta">
+            <span class="difficulty" [attr.data-level]="bookMeta(book).difficulty.toUpperCase()">
+              {{ bookMeta(book).difficulty }}
+            </span>
+            <span class="genre">{{ bookMeta(book).genre }}</span>
+          </div>
+
+          <p class="reading-info">
+            <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+            <span>{{ bookMeta(book).readingTime }}</span>
+            <svg class="info-icon info-icon--book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M2 6c4-1 8 0 10 2 2-2 6-3 10-2v12c-4-1-8 0-10 2-2-2-6-3-10-2V6z"/>
+              <path d="M12 8v12"/>
+            </svg>
+            <span>{{ bookMeta(book).chapters }}</span>
+          </p>
+
+          <div class="tags">
+            @for (tag of bookMeta(book).tags; track tag) {
+              <span>{{ tag }}</span>
+            }
+          </div>
+
+          <button [disabled]="!book.playable || busyBook() !== null" (click)="start(book)">
+            <svg class="btn-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            {{ busyBook() === book.id ? 'Preparing…' : book.playable ? 'Begin Quest' : 'Validation failed' }}
+          </button>
+        </article>
+      }
+    </section>
+  }
+
+  @if (saves().length > 0) {
+    <section class="saved" aria-labelledby="saved-adventures-title">
+      <div class="saved__header">
+        <div class="saved__eyebrow">
+          <svg class="saved__eyebrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+          </svg>
+          <span>SAVED CHRONICLES</span>
+        </div>
+        <div class="saved__title-row">
+          <h2 id="saved-adventures-title">Saved adventures</h2>
+          <span class="saved__count">{{ saves().length }} {{ saves().length === 1 ? 'bookmark' : 'bookmarks' }}</span>
+        </div>
+        <p class="saved__desc">Pick up your journey right where fate paused.</p>
+      </div>
+
+      <div class="save-list">
+        @for (save of saves(); track save.id) {
+          <article class="save-card" [class.save-card--confirming]="confirmingDeleteId() === save.id">
+            <span class="save-card__ribbon" aria-hidden="true"></span>
+
+            @if (confirmingDeleteId() === save.id) {
+              <div class="save-card__confirm-box">
+                <p class="save-card__confirm-text">Delete this bookmark?</p>
+                <div class="save-card__confirm-actions">
+                  <button
+                    type="button"
+                    class="save-card__btn-delete-confirm"
+                    [disabled]="busyDelete() === save.id"
+                    (click)="confirmDelete(save, $event)"
+                  >
+                    {{ busyDelete() === save.id ? 'Deleting…' : 'Delete' }}
+                  </button>
+                  <button
+                    type="button"
+                    class="save-card__btn-delete-cancel"
+                    [disabled]="busyDelete() === save.id"
+                    (click)="cancelDelete($event)"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            } @else {
+              <div class="save-card__body">
+                <div class="save-card__top">
+                  <span class="save-card__badge">
+                    <svg class="save-card__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    Checkpoint
+                  </span>
+
+                  <div class="save-card__actions">
+                    <button
+                      type="button"
+                      class="save-card__action"
+                      (click)="restore(save)"
+                    >
+                      Resume
+                      <svg class="save-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="save-card__delete"
+                      (click)="promptDelete(save, $event)"
+                      title="Delete bookmark"
+                      aria-label="Delete bookmark"
+                    >
+                      <svg class="save-card__trash-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 6h18"/>
+                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
+                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
+                        <line x1="10" y1="11" x2="10" y2="17"/>
+                        <line x1="14" y1="11" x2="14" y2="17"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="save-card__main"
+                  role="button"
+                  tabindex="0"
+                  (click)="restore(save)"
+                  (keydown.enter)="restore(save)"
+                >
+                  <strong class="save-card__name">{{ save.name }}</strong>
+
+                  <div class="save-card__meta">
+                    <span class="save-card__book">
+                      <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M2 6c4-1 8 0 10 2 2-2 6-3 10-2v12c-4-1-8 0-10 2-2-2-6-3-10-2V6z"/>
+                        <path d="M12 8v12"/>
+                      </svg>
+                      <span>{{ formatBookTitle(save.bookId) }}</span>
+                    </span>
+                    <span class="save-card__date">
+                      <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9"/>
+                        <path d="M12 7v5l3 2"/>
+                      </svg>
+                      <span>{{ formatSaveDate(save.savedAt) }}</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            }
+          </article>
+        }
+      </div>
+    </section>
+  }
+
+  @if (isImportModalOpen()) {
+    <div class="modal-backdrop" (click)="closeImportModal()">
+      <div
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        (click)="$event.stopPropagation()"
+      >
+        <div class="modal-header">
+          <div class="modal-header__title-group">
+            <svg class="modal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              <path d="M12 8v6M9 11h6"/>
+            </svg>
+            <h3 id="modal-title">Add New Quest</h3>
+          </div>
+          <button type="button" class="modal-close" (click)="closeImportModal()" aria-label="Close modal">✕</button>
+        </div>
+
+        <div class="modal-body">
+          <p class="modal-desc">
+            Upload your custom interactive quest in <strong>JSON</strong> format. The quest file is validated immediately upon selection. It must define title, author, difficulty, and valid story branches with exactly one <strong>BEGIN</strong> section and at least one <strong>END</strong> section.
+          </p>
+
+          <div class="example-section">
+            <div class="example-header">
+              <button type="button" class="btn-toggle-example" (click)="toggleExample()">
+                <svg class="example-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+                <span>{{ showExample() ? 'Hide example JSON' : 'Show example JSON' }}</span>
+                <span class="chevron" [class.chevron--open]="showExample()">▾</span>
+              </button>
+
+              @if (showExample()) {
+                <div class="example-actions">
+                  <button type="button" class="btn-example-action" (click)="useExampleQuest()">
+                    Use this example
+                  </button>
+                  <button type="button" class="btn-example-action" (click)="copyExampleQuest()">
+                    {{ copiedExample() ? 'Copied!' : 'Copy' }}
+                  </button>
+                </div>
+              }
+            </div>
+
+            @if (showExample()) {
+              <textarea
+                class="example-textarea"
+                rows="8"
+                readonly
+                [value]="exampleQuestJson"
+                aria-label="Example quest JSON"
+              ></textarea>
+            }
+          </div>
+
+          <div class="upload-zone" [class.upload-zone--has-file]="selectedFile() !== null">
+            <input
+              type="file"
+              id="quest-file-input"
+              class="upload-input"
+              accept=".json,application/json"
+              (change)="onFileSelected($event)"
+            />
+            <label for="quest-file-input" class="upload-label">
+              <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+              <div class="upload-details">
+                @if (selectedFile()) {
+                  <span class="file-name">{{ selectedFile()?.name }}</span>
+                  <span class="file-meta">{{ formatFileSize(selectedFile()!.size) }}</span>
+                  <span class="file-change">Click to choose a different file</span>
+                } @else {
+                  <span class="file-prompt">Select quest file (.json)</span>
+                  <span class="file-hint">JSON format up to 1 MB</span>
+                }
+              </div>
+            </label>
+          </div>
+
+          @if (validating()) {
+            <div class="validation-status validation-status--checking">
+              <span class="spinner-small"></span>
+              <span>Validating quest structure…</span>
+            </div>
+          }
+
+          @if (validationSuccess()) {
+            <div class="validation-status validation-status--success" role="status">
+              <svg class="status-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <div>
+                <strong>Quest is valid! Ready to import.</strong>
+                <p>{{ validationSuccess() }}</p>
+              </div>
+            </div>
+          }
+
+          @if (validationErrors().length > 0) {
+            <div class="validation-status validation-status--error" role="alert">
+              <div class="error-header">
+                <svg class="status-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                <strong>Invalid quest file (upload disabled):</strong>
+              </div>
+              <ul class="error-list">
+                @for (err of validationErrors(); track err) {
+                  <li>{{ err }}</li>
+                }
+              </ul>
+            </div>
+          }
+
+          @if (importError()) {
+            <div class="notice notice--error" role="alert">
+              <strong>Import Error:</strong>
+              <span>{{ importError() }}</span>
+            </div>
+          }
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-cancel" (click)="closeImportModal()">Cancel</button>
+          <button
+            type="button"
+            class="btn-submit"
+            [disabled]="!isValidFile() || importing() || validating()"
+            (click)="submitImport()"
+          >
+            @if (importing()) {
+              <span class="spinner-small"></span>
+              <span>Importing…</span>
+            } @else {
+              <span>Add Quest</span>
+            }
+          </button>
+        </div>
+      </div>
+    </div>
+  }
+</main>

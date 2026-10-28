@@ -1,0 +1,20 @@
+# Generated dependencies and builds
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/.angular/
+backend/target/
+tmp/
+
+# Local persistent application data
+backend/data/
+data/
+
+# Tooling and OS files
+.agents/
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+*.log

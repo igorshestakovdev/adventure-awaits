@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --serif: Georgia, 'Cormorant Garamond', serif;
+  --sans: Inter, system-ui, sans-serif;
+  --ink: #372921;
+  --muted: #786a61;
+  --gold: #dfa51f;
+  --gold-dark: #9f6b08;
+  --line: #e7dbce;
+  --shadow: 0 20px 55px #4a2f1720;
+  color-scheme: light;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: #f8f3ed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #d49b28 transparent;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+/* Sleek custom golden scrollbar matching the design */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d49b28;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b88318;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  outline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 3px solid #2664a8;
+}
+
+::selection {
+  background: #f4d780;
+  color: #2b211b;
+}

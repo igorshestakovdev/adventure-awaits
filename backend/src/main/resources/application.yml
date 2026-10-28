@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: adventure-book
+  datasource:
+    url: jdbc:h2:file:./data/adventure-book;AUTO_SERVER=TRUE
+    username: sa
+    password:
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 1MB
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+  sql:
+    init:
+      mode: never
+server:
+  error:
+    include-message: never
+    include-stacktrace: never
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html

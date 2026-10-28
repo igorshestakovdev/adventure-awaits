@@ -1,0 +1,462 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #fbfaf9;
+}
+
+.gamebar {
+  min-height: 72px;
+  padding: 9px max(24px, calc((100vw - 1040px) / 2));
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 18px;
+  align-items: center;
+  border-bottom: 1px solid #eee8e2;
+  background: #fffdfaf2;
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.ui-icon {
+  width: 13px;
+  height: 13px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+
+.title {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font: 700 0.7rem Georgia, serif;
+  padding: 4px 12px;
+  background: #f8efe1;
+  border: 1px solid #ead8bd;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.game-actions {
+  justify-self: end;
+}
+
+.link,
+.save-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.link {
+  border: 0;
+  background: none;
+  padding: 8px 0;
+  color: #493930;
+  font: 600 0.7rem Georgia, serif;
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.save-button {
+  border: 1px solid #ded8d1;
+  background: #fffdfa;
+  border-radius: 7px;
+  padding: 7px 12px;
+  color: #493930;
+  font: 600 0.7rem Georgia, serif;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+
+  &:hover {
+    border-color: #c78714;
+    background: #fff8eb;
+  }
+}
+
+.save-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  input {
+    border: 1px solid #ded8d1;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font: 600 0.72rem Georgia, serif;
+    color: #493930;
+    width: 160px;
+
+    &:focus {
+      outline: 2px solid #dfa51f;
+      border-color: #dfa51f;
+    }
+  }
+
+  .save-confirm-button {
+    border: 1px solid #c78714;
+    background: linear-gradient(100deg, #c78714, #f1cc37);
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 6px 11px;
+    font: 700 0.7rem Georgia, serif;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+  }
+
+  .save-cancel-button {
+    border: 1px solid #ded8d1;
+    background: #fffdfa;
+    color: #786a61;
+    border-radius: 6px;
+    padding: 6px 9px;
+    font: 700 0.7rem Georgia, serif;
+    cursor: pointer;
+
+    &:hover {
+      background: #eee8e2;
+    }
+  }
+}
+
+main {
+  max-width: 760px;
+  margin: auto;
+  padding: 10px 20px 90px;
+}
+
+.page {
+  background: #fffdfb;
+  border: 1px solid #ede1d4;
+  border-radius: 11px;
+  padding: clamp(24px, 4vw, 36px) clamp(16px, 3vw, 28px) 16px;
+  box-shadow: 0 7px 22px #4a2f1707;
+
+  h1 {
+    text-align: center;
+    font: 700 clamp(1.45rem, 3vw, 1.9rem) / 1.1 Georgia, serif;
+    margin: 0 0 18px;
+    color: #49382f;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.story {
+  font: 600 0.9rem / 1.52 Georgia, serif;
+  white-space: pre-line;
+  color: #493b34;
+  margin: 0;
+}
+
+.divider {
+  height: 1px;
+  background: #eee5dd;
+  margin: 18px 0;
+}
+
+.page h2 {
+  font: 700 0.98rem Georgia, serif;
+  margin: 0;
+  color: #4a3930;
+}
+
+.choices {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+
+  button {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 10px;
+    text-align: left;
+    border: 1px solid #eee2d5;
+    background: #fffefd;
+    border-radius: 9px;
+    padding: 10px 12px;
+    color: #4a3930;
+    font: 600 0.78rem Georgia, serif;
+    cursor: pointer;
+    transition: 0.16s ease;
+
+    &:hover:not(:disabled),
+    &:focus-visible {
+      transform: translateY(-1px);
+      border-color: #d8b978;
+      box-shadow: 0 7px 18px #4d382516;
+    }
+
+    &:disabled {
+      opacity: 0.55;
+    }
+  }
+}
+
+.number {
+  min-width: 22px;
+  height: 15px;
+  display: grid;
+  place-items: center;
+  background: #4b392f;
+  color: #fff;
+  border-radius: 8px;
+  font: 700 0.56rem var(--sans);
+  letter-spacing: 0.02em;
+  margin-top: 2px;
+  padding: 0 5px;
+}
+
+.choice-copy {
+  display: grid;
+  gap: 4px;
+
+  strong {
+    font: 600 0.79rem / 1.2 Georgia, serif;
+  }
+
+  small {
+    color: #998a80;
+    font: italic 0.7rem / 1.2 Georgia, serif;
+  }
+}
+
+.consequence {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: linear-gradient(135deg, #fdf8f6 0%, #faf0ec 100%);
+  border: 1px solid #ebd8d2;
+  border-left: 4px solid #b85346;
+  border-radius: 9px;
+  padding: 12px 16px;
+  margin: 20px 0 16px;
+  box-shadow: 0 4px 14px rgba(74, 47, 23, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  animation: consequenceAppear 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &--loss {
+    background: linear-gradient(135deg, #fdf8f6 0%, #faf0ec 100%);
+    border-color: #ebd8d2;
+    border-left-color: #b85346;
+
+    .consequence-badge {
+      background: #f7e4df;
+      border-color: #e7c8c0;
+      color: #8c2a21;
+    }
+
+    .consequence-title {
+      color: #742923;
+    }
+
+    .consequence-text {
+      color: #5c443b;
+    }
+  }
+
+  &--gain {
+    background: linear-gradient(135deg, #f7faf5 0%, #eef5ec 100%);
+    border-color: #d2e4ce;
+    border-left-color: #4a8246;
+
+    .consequence-badge {
+      background: #e4f0e0;
+      border-color: #c5dec0;
+      color: #2a6125;
+    }
+
+    .consequence-title {
+      color: #275922;
+    }
+
+    .consequence-text {
+      color: #435240;
+    }
+  }
+
+  &--neutral {
+    background: linear-gradient(135deg, #fdfbf7 0%, #f6f0e6 100%);
+    border-color: #ebdccb;
+    border-left-color: #a89178;
+
+    .consequence-badge {
+      background: #f0e6d6;
+      border-color: #e0d0bc;
+      color: #6e5741;
+    }
+
+    .consequence-title {
+      color: #574637;
+    }
+
+    .consequence-text {
+      color: #5a4f46;
+    }
+  }
+}
+
+.consequence-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.consequence-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font: 700 0.68rem/1 var(--sans);
+  letter-spacing: 0.02em;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.consequence-icon {
+  width: 13px;
+  height: 13px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.consequence-title {
+  font: 700 0.88rem/1.25 Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.consequence-text {
+  font: italic 400 0.88rem/1.55 Georgia, serif;
+  padding-left: 2px;
+}
+
+@keyframes consequenceAppear {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ending {
+  text-align: center;
+  padding: 22px;
+
+  > span {
+    font-size: 2.6rem;
+    color: var(--gold);
+  }
+
+  button {
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 15px;
+    background: linear-gradient(100deg, #c88a16, #f0c735);
+    font-weight: 800;
+    cursor: pointer;
+  }
+}
+
+.saved {
+  text-align: center;
+  background: #edf7ea;
+  color: #3d6b3a;
+  border: 1px solid #cfe4ca;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 14px auto 0;
+  max-width: 540px;
+  font-size: 0.82rem;
+}
+
+.notice,
+.state {
+  text-align: center;
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+.notice {
+  background: #fff0ed;
+  color: #6e2822;
+  border-radius: 8px;
+
+  .link {
+    margin-left: 8px;
+    color: #6e2822;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 700px) {
+  .gamebar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 14px;
+    gap: 8px;
+  }
+
+  .title {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .save-button {
+    padding: 7px 9px;
+    font-size: 0;
+
+    &:after {
+      content: 'Save';
+      font-size: 0.68rem;
+    }
+  }
+
+  .link {
+    font-size: 0.68rem;
+  }
+
+  main {
+    padding: 12px 14px 70px;
+  }
+
+  .page {
+    padding: 24px 17px 14px;
+  }
+
+  .story {
+    font-size: 0.94rem;
+  }
+
+  .choices button {
+    font-size: 0.84rem;
+  }
+
+  .consequence {
+    padding: 10px 13px;
+    margin: 16px 0 14px;
+  }
+}

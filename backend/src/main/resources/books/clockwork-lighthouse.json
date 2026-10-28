@@ -1,0 +1,24 @@
+{
+  "title": "The Clockwork Lighthouse",
+  "author": "Adventure Book Team",
+  "difficulty": "EASY",
+  "sections": [
+    { "id": 10, "text": "A storm has silenced the clockwork lighthouse. Without its beam, a merchant ship will strike the black reef before dawn. The lighthouse door is locked, but a narrow path climbs toward an open window.", "type": "BEGIN", "options": [
+      { "description": "Climb the rain-slick path to the window", "gotoId": 20, "consequence": { "type": "LOSE_HEALTH", "value": 3, "text": "Loose stone cuts your hands as you climb." } },
+      { "description": "Search the keeper's abandoned workshop", "gotoId": 30 }
+    ] },
+    { "id": 20, "text": "Inside the lantern room, jammed brass gears groan beneath the dark lens. You can force the mechanism or descend to find the missing counterweight.", "type": "NODE", "options": [
+      { "description": "Force the gears into motion", "gotoId": 40, "consequence": { "type": "LOSE_HEALTH", "value": 8, "text": "The mechanism snaps back with crushing force." } },
+      { "description": "Descend into the machinery room", "gotoId": 50 }
+    ] },
+    { "id": 30, "text": "Beneath a pile of charts you find the keeper's winding key and a flask of restorative tonic.", "type": "NODE", "options": [
+      { "description": "Drink the tonic and enter through the service door", "gotoId": 50, "consequence": { "type": "GAIN_HEALTH", "value": "4", "text": "Warmth returns to your exhausted limbs." } }
+    ] },
+    { "id": 50, "text": "The counterweight hangs over a flooded shaft. The winding key fits a socket beside the release lever.", "type": "NODE", "options": [
+      { "description": "Wind the mechanism with the keeper's key", "gotoId": 60 },
+      { "description": "Leap across the shaft and pull the lever", "gotoId": 60, "consequence": { "type": "LOSE_HEALTH", "value": 5, "text": "You strike the far ledge hard, but keep your grip." } }
+    ] },
+    { "id": 40, "text": "The broken gears collapse. The lighthouse remains dark as the storm closes in.", "type": "END" },
+    { "id": 60, "text": "The great lens turns. A golden beam sweeps across the reef, and the distant ship changes course just in time.", "type": "END" }
+  ]
+}
